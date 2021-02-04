@@ -67,7 +67,7 @@ public class PersistentTransactionDAO implements TransactionDAO,TransactionSchem
     public List<Transaction> getPaginatedTransactionLogs(int limit){
         SQLiteDatabase sqliteDB = db.getReadableDatabase();
         List<Transaction> transactionList = new ArrayList<>();
-        cursor = sqliteDB.query(TRANSACTION_TABLE,new String[]{ACCOUNT_NO,DATE,TYPE,AMOUNT},null,null,null,null,String.valueOf(limit));
+        cursor = sqliteDB.query(TRANSACTION_TABLE,new String[]{ACCOUNT_NO,DATE,TYPE,AMOUNT},null,null,null,null, null, String.valueOf(limit));
         if(cursor.moveToFirst()){
             do{
                 String accNo = cursor.getString(cursor.getColumnIndexOrThrow(ACCOUNT_NO));
