@@ -1,0 +1,4 @@
+#Thu Feb 04 16:21:17 IST 2021
+base.0=C\:\\Users\\Maneesha Dilshan\\Desktop\\SimpleExpenseManager\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
